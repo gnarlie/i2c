@@ -3,12 +3,12 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <linux/i2c-dev-user.h>
+#include <linux/i2c-dev.h>
 #include <stdlib.h>
 #include <errno.h>
 #include <stdint.h>
 
-const int BUS_NUMBER = 3;
+const int BUS_NUMBER = 0;
 const int I2C_ADDR = 0x52;
 int setup() {
         char filename[20];
